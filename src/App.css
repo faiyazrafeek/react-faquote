@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+#root, html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Nunito', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card{
+    background: whitesmoke;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.advice{
+    display: flex;
+    align-items: center;
+    height: 580px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+    font-family: 'Nunito', sans-serif;
+    padding: 2% 4% ;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s; outline: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
+
+.button:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 600px){
+    .card{
+        width: 80%;
+        height: 35%;
+    }
+    .button{
+        margin-bottom: 20px;
+    }
+}
+
