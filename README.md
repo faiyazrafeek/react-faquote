@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# FA Quote
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple Quote Generator application developed using React JS [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
